@@ -42,16 +42,20 @@ $("#make-new-board").click(function () {
     }
   })
   
-  $('td').click(function() {
-    $(this).css('color', '#8a8a89');
+  // $('td').click(function() {
+  //   $(this).css('color', '#8a8a89');
  
 
 //     3b3b3a
 // after click 8a8a89
-  }) 
+  // }) 
 
+$('td').click(function() {
+  $(this).toggleClass('highlight');
+  console.log($(this).css('background-color'));
+})
 
-  // $('body').on('click', '.square', function() {
+  // $('body').on('click', 'tr', function() {
   // 	console.log($(this).css('background-color'))
   // 	if ($(this).css('background-color') === 'rgb(244, 238, 156)') {
 		// 	$(this).css('background-color', '#f4e26f');  		

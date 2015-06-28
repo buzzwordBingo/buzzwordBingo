@@ -1,5 +1,6 @@
 html{
 background-color: #f0efde;
+background-image: url('back.png');
 
 }
 
@@ -38,6 +39,10 @@ table {
   width: 85vw;
   /*height: 70vh;*/
   display: inline-block;
+}
+
+td.highlight {
+  background-color: #F7DD2E;
 }
 
 
