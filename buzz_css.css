@@ -1,6 +1,8 @@
 html{
 background-color: #f0efde;
 background-image: url('back.png');
+font-family: helvetica;
+font-weight: bold;
 
 }
 
@@ -19,7 +21,9 @@ td {
   height: 20vh;
   width: 20vw;
   text-align: center;
-  border-style: ridge;
+  /*border-style: ridge;*/
+  background-color: #f4ee9c;
+  opacity: 0.5;
 }
 
 table {
