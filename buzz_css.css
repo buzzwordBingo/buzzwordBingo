@@ -173,3 +173,12 @@ position: relative;
   #lab article {
   width: 300px;
 }
+
+p {
+  text-align: center;
+  vertical-align: middle;
+  position: absolute;
+  right: 140px;
+  top: 65px;
+  z-index: 99;
+}

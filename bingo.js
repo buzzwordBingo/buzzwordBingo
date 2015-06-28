@@ -21,8 +21,8 @@ $("#make-new-board").click(function () {
 
   var selectSquare = function(html, list) {
   	var num = shuffle(list).pop()
-  	var squareClass = '.square-' + num
-  	$(squareClass).append(html)
+  	var squareClass = '#square-' + num
+  	$(squareClass ).prepend(html)
   }
 
   //autopopulated Neohack board
