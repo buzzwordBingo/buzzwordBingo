@@ -17,7 +17,7 @@ $("#make-new-board").click(function () {
  		}
 	  return array;
 	}
-	var list = range(1, 6);
+	var list = range(0, 15);
 
   var selectSquare = function(html, list) {
   	var num = shuffle(list).pop()
@@ -42,19 +42,23 @@ $("#make-new-board").click(function () {
     }
   })
   
-  $('.hexagon-in2').click(function() {
-    $(this).toggleClass('highlight');
+  $('td').click(function() {
+    $(this).css('color', '#8a8a89');
+ 
+
+//     3b3b3a
+// after click 8a8a89
   }) 
 
 
-  $('body').on('click', '.square', function() {
-  	console.log($(this).css('background-color'))
-  	if ($(this).css('background-color') === 'rgb(244, 238, 156)') {
-			$(this).css('background-color', '#f4e26f');  		
-  	} else {
-  		$(this).css('background-color', '#f4ee9c')
-  	}
-  })
+  // $('body').on('click', '.square', function() {
+  // 	console.log($(this).css('background-color'))
+  // 	if ($(this).css('background-color') === 'rgb(244, 238, 156)') {
+		// 	$(this).css('background-color', '#f4e26f');  		
+  // 	} else {
+  // 		$(this).css('background-color', '#f4ee9c')
+  // 	}
+  // })
 
   //user input generated board
 // $('#add-theme').on('click', function() {
@@ -102,7 +106,9 @@ $("#make-new-board").click(function () {
 
  //  var currentUser;
 
- 
+ $("#make-new-board").click(function () {
+    location.reload();
+  });
 
 
 });
